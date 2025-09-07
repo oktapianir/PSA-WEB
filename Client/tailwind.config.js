@@ -8,4 +8,12 @@ export default {
     extend: {},
   },
   plugins: [],
+
+  extend: {
+  fontFamily: {
+    mont: ['var(--font-mont)', 'sans-serif'],
+    hk: ['var(--font-hk)', 'sans-serif'],
+  },
+},
+
 }
