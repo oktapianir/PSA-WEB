@@ -97,7 +97,7 @@ export default function Tentangkami() {
           </div>
         </div>
       </section>
-     
+      
     </>
   );
 }
