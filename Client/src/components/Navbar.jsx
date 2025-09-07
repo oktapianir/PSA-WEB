@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/img-logo-PSA.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 backdrop-blur-sm bg-white/95">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-7">
+      <div className="w-full flex justify-between items-center px-6 py-2">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
-          {/* <img src={logo} alt="logo" className="w-7 h-7 object-contain"></img> */}
-          <img src={logo} alt="logo" className="w-20 h-16 object-contain"></img>
+        <div className="w-32 h-24 flex items-center space-x-3">
+          <img 
+            src={logo} 
+            alt="logo" 
+            // className="w-32 h-24 object-contain transform scale-110"
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -90,7 +93,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/kontak"
+              to="/contact"
               className="hover:text-blue-600 transition-colors duration-200 relative group"
             >
               Kontak
@@ -103,7 +106,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center space-x-4">
           <a
             href="#daftar"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 text-white px-8 py-3 rounded-xl transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Daftar / Masuk
           </a>
@@ -142,7 +145,7 @@ export default function Navbar() {
       >
         <div className="px-6 py-4 space-y-4">
           <a
-            href="#beranda"
+            href="/"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             Beranda
@@ -154,7 +157,7 @@ export default function Navbar() {
             Program
           </a>
           <a
-            href="#tentang"
+            href="/tentangkami"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             Tentang Kami
@@ -166,7 +169,7 @@ export default function Navbar() {
             Mitra
           </a>
           <a
-            href="#kontak"
+            href="/contact"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             Kontak
