@@ -1,4 +1,5 @@
 import ImgPro from "../assets/imgproo.png";
+import ImgTestimoni from "../assets/img-testi.jpeg";
 
 export default function Home() {
   return (
@@ -15,10 +16,11 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Tingkatkan Skill,
-              <br />
-              <span className="text-blue-600">Raih Karier Impian</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              Tingkatkan Skill{" "}
+              <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-400 to-blue-700 animate-pulse">
+                Raih Karier Impian
+              </span>
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
@@ -29,7 +31,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <button className="bg-blue-600 text-white px-8 py-4 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                Daftar Program
+                <a href="/login">Daftar Program</a>
               </button>
             </div>
 
@@ -82,10 +84,10 @@ export default function Home() {
                 Keunggulan Kami
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Mengapa Memilih
-              <span className="text-blue-600 block lg:inline lg:ml-3">
-                Punya Skill Akademi?
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              Mengapa Memilih{" "}
+              <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-400 to-blue-700 animate-pulse">
+                Punya Skill Akademi
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -255,21 +257,13 @@ export default function Home() {
                         Job Placement
                       </div>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl">
-                      <div className="text-4xl font-bold text-purple-600 mb-2">
-                        50+
-                      </div>
-                      <div className="text-purple-700 font-medium">
-                        Mitra Industri
-                      </div>
+                  </div>
+                  <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
+                    <div className="text-4xl font-bold text-orange-600 mb-2">
+                      100%
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
-                      <div className="text-4xl font-bold text-orange-600 mb-2">
-                        100%
-                      </div>
-                      <div className="text-orange-700 font-medium">
-                        Bersertifikat
-                      </div>
+                    <div className="text-orange-700 font-medium">
+                      Bersertifikat
                     </div>
                   </div>
 
@@ -283,7 +277,7 @@ export default function Home() {
                       manfaatnya
                     </p>
                     <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                      Daftar Sekarang
+                      <a href="/login"> Daftar Sekarang</a>
                     </button>
                   </div>
                 </div>
@@ -304,13 +298,13 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Beberapa Program
-              <span className="text-blue-600 block lg:inline lg:ml-3">
-                Punya Skill Akademi?
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold leading-tight">
+              Beberapa Program{" "}
+              <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-400 to-blue-700 animate-pulse">
+                Punya Skill Akademi
               </span>
             </h2>
-            <p className="text-lg text-blue-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Anda tertarik? Langsung daftar yuk, untuk mendapatkan pengalaman
               pelatihan yang lebih profesional.
             </p>
@@ -334,7 +328,7 @@ export default function Home() {
                   2021 so far, in reverse chronological order.
                 </p>
                 <a
-                  href="#"
+                  href="/detail-program"
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600"
                 >
                   Read more
@@ -373,7 +367,7 @@ export default function Home() {
                   2021 so far, in reverse chronological order.
                 </p>
                 <a
-                  href="#"
+                  href="/detail-program"
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600"
                 >
                   Read more
@@ -411,7 +405,7 @@ export default function Home() {
                   2021 so far, in reverse chronological order.
                 </p>
                 <a
-                  href="#"
+                  href="/detail-program"
                   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Read more
@@ -449,7 +443,7 @@ export default function Home() {
                   2021 so far, in reverse chronological order.
                 </p>
                 <a
-                  href="#"
+                  href="/detail-program"
                   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-7   "
                 >
                   Read more
@@ -469,6 +463,59 @@ export default function Home() {
                     />
                   </svg>
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Card */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold leading-tight">
+              Testimoni dari peserta pelatihan bersama{" "}
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-400 to-blue-700 animate-pulse">
+                Punya Skill Akademi
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5">
+              <img
+                class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src={ImgTestimoni}
+                alt=""
+              ></img>
+              <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Mr.DeVille
+                </h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-black-400">
+                  "Program di Punya Skill Akademi benar-benar mengubah karier
+                  saya. Dari yang tidak tahu apa-apa tentang digital marketing,
+                  sekarang saya bekerja sebagai Digital Marketing Manager di
+                  perusahaan teknologi ternama."
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5">
+              <img
+                class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src={ImgTestimoni}
+                alt=""
+              ></img>
+              <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Mr.DeVille
+                </h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-black-400">
+                  "Program di Punya Skill Akademi benar-benar mengubah karier
+                  saya. Dari yang tidak tahu apa-apa tentang digital marketing,
+                  sekarang saya bekerja sebagai Digital Marketing Manager di
+                  perusahaan teknologi ternama."
+                </p>
               </div>
             </div>
           </div>
@@ -506,10 +553,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Yuk Gabung!
+                  <a href="/login">Yuk Gabung!</a>
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 font-semibold">
-                  Lihat Program
+                  <a href="#">Lihat Program</a>
                 </button>
               </div>
             </div>
