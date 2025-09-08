@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
 
                 {/* CTA Button */}
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/50">
                     <span>Hubungi kami</span>
                     <svg
@@ -318,6 +318,29 @@ export default function Contact() {
                               Sukamiskin, Kec. Arcamanik, Kota Bandung, Jawa
                               Barat 40291
                             </p>
+                          </div>
+                        </div>
+                        {/* Instagram */}
+                        <div className="flex items-center justify-center space-x-4 text-black/90">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl flex items-center justify-center border border-white/10">
+                            <svg
+                              className="w-5 h-5 text-pink-500"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M7.75 2C4.678 2 2 4.678 2 7.75v8.5C2 19.322 4.678 22 7.75 22h8.5c3.072 0 5.75-2.678 5.75-5.75v-8.5C22 4.678 19.322 2 16.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM17.5 6.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" />
+                            </svg>
+                          </div>
+                          <div className="text-center">
+                            <p className="text-sm font-semibold">Instagram</p>
+                            <a
+                              href="https://www.instagram.com/punyaskillakademi/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-blue-500 hover:underline"
+                            >
+                              @punyaskillakademi
+                            </a>
                           </div>
                         </div>
                       </div>
