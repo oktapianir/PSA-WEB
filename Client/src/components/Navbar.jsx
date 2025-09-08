@@ -9,9 +9,9 @@ export default function Navbar() {
       <div className="w-full flex justify-between items-center px-6 py-2">
         {/* Logo */}
         <div className="w-32 h-24 flex items-center space-x-3">
-          <img 
-            src={logo} 
-            alt="logo" 
+          <img
+            src={logo}
+            alt="logo"
             // className="w-32 h-24 object-contain transform scale-110"
           />
         </div>
@@ -27,7 +27,16 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          <li className="relative group">
+           <li>
+            <Link
+              to="/program"
+              className="hover:text-blue-600 transition-colors duration-200 relative group"
+            >
+              Program
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          </li>
+          {/* <li className="relative group">
             <Link
               to="/program"
               className="hover:text-blue-600 transition-colors duration-200 flex items-center group"
@@ -72,7 +81,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/tentangkami"
@@ -82,7 +91,7 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/mitra"
               className="hover:text-blue-600 transition-colors duration-200 relative group"
@@ -90,7 +99,7 @@ export default function Navbar() {
               Mitra
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/contact"
@@ -104,12 +113,12 @@ export default function Navbar() {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <a
-            href="#daftar"
+          <Link
+            to="/login"
             className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-600 hover:to-teal-600 text-white px-8 py-3 rounded-xl transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Daftar / Masuk
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -162,12 +171,12 @@ export default function Navbar() {
           >
             Tentang Kami
           </a>
-          <a
+          {/* <a
             href="#mitra"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             Mitra
-          </a>
+          </a> */}
           <a
             href="/contact"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
