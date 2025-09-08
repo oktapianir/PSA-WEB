@@ -7,16 +7,16 @@ export default function Tentangkami() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-20">
+          <div className="text-center mb-10">
             <div className="inline-flex items-center bg-blue-50 border border-blue-200 rounded-full px-6 py-2 mb-6">
               <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>
               <span className="text-sm font-medium text-blue-700">
                 Tentang Punya Skill Academy
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Apa itu
-              <span className="text-blue-600 block lg:inline lg:ml-3">
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+              Apa itu{" "}
+              <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-400 to-blue-700 animate-pulse">
                 Punya Skill Akademi?
               </span>
             </h2>
@@ -68,8 +68,7 @@ export default function Tentangkami() {
                           Mitra Industri
                         </div>
                         <div className="text-purple-700 font-medium">
-                          Bekerja sama dengan beberapa mitra untuk mendukung
-                          pengalaman nyata peserta.
+                          Bekerja sama dengan Kementrian Ketenagakerjaan 
                         </div>
                       </div>
                     </div>
