@@ -38,7 +38,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Beranda
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/tentangkami"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Tentang Kami
@@ -62,15 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  Mitra
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="/contact"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Kontak
@@ -101,7 +93,10 @@ export default function Footer() {
                   />
                 </svg>
                 <div className="text-gray-400">
-                  <p>VOffice BYE, Jl. Terusan Jakarta No.404, Sukamiskin, Kec. Arcamanik</p>
+                  <p>
+                    VOffice BYE, Jl. Terusan Jakarta No.404, Sukamiskin, Kec.
+                    Arcamanik
+                  </p>
                   <p>Kota Bandung, Jawa Barat 40291</p>
                 </div>
               </div>
