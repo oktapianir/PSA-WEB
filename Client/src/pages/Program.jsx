@@ -1,6 +1,5 @@
 import ImgPro from "../assets/imgproo.png";
 
-
 export default function Program() {
   return (
     <>
@@ -24,15 +23,13 @@ export default function Program() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
             <div className="max-w-sm bg-white rounded-lg shadow-sm dark:bg-white-800 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5">
-              <a href="#">
-                <img className="rounded-t-lg" src={ImgPro} alt="" />
-              </a>
+              <img className="rounded-t-lg" src={ImgPro} alt="" />
+
               <div className="p-5">
-                <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </a>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-700">
                   Here are the biggest enterprise technology acquisitions of
                   2021 so far, in reverse chronological order.
@@ -63,15 +60,13 @@ export default function Program() {
 
             {/* Card 2 */}
             <div className="max-w-sm bg-white rounded-lg shadow-sm dark:bg-white-800 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5 ">
-              <a href="#">
-                <img className="rounded-t-lg" src={ImgPro} alt="" />
-              </a>
+              <img className="rounded-t-lg" src={ImgPro} alt="" />
+
               <div className="p-5">
-                <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </a>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-700">
                   Here are the biggest enterprise technology acquisitions of
                   2021 so far, in reverse chronological order.
@@ -101,15 +96,13 @@ export default function Program() {
             </div>
 
             <div class="max-w-sm bg-white rounded-lg shadow-sm dark:bg-white-800 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5">
-              <a href="#">
-                <img class="rounded-t-lg" src={ImgPro} alt="" />
-              </a>
+              <img class="rounded-t-lg" src={ImgPro} alt="" />
+
               <div class="p-5">
-                <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </a>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-700">
                   Here are the biggest enterprise technology acquisitions of
                   2021 so far, in reverse chronological order.
@@ -139,15 +132,13 @@ export default function Program() {
             </div>
 
             <div class="max-w-sm bg-white rounded-lg shadow-sm dark:bg-white-800 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-0.5">
-              <a href="#">
-                <img class="rounded-t-lg" src={ImgPro} alt="" />
-              </a>
+              <img class="rounded-t-lg" src={ImgPro} alt="" />
+
               <div class="p-5">
-                <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </a>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-700">
                   Here are the biggest enterprise technology acquisitions of
                   2021 so far, in reverse chronological order.
