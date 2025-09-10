@@ -42,7 +42,8 @@ export default function Register() {
     // localStorage.setItem("user", JSON.stringify(response.data.user));
 
       setTimeout(()=> {
-        navigate("/dashboard-user");
+        // navigate("/dashboard-user");
+        navigate("/login");
       },1200);
 
       setTimeout(() => setSubmitStatus(""), 3000);
