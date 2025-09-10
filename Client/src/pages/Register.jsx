@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import ImgPro from "../assets/imgproo.png";
-import { Link } from "react-router-dom"; // gunakan ini kalau pakai react-router
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
+    name: "",
+    jenis_kelamin: "",
     email: "",
     password: "",
   });
@@ -24,12 +29,25 @@ export default function Register() {
     setIsSubmitting(true);
 
     try {
-      // simulasi API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await axios.post(
+        "http://localhost:5000/api/auth/register",
+        formData
+      );
+      console.log("✅ Berhasil daftar:", response.data);
+
       setSubmitStatus("success");
-      setFormData({ email: "", password: "" });
+      setFormData({ name: "", jenis_kelamin:"", email: "", password: "" });
+
+       //Simpan data user ke localStorage
+    // localStorage.setItem("user", JSON.stringify(response.data.user));
+
+      setTimeout(()=> {
+        navigate("/dashboard-user");
+      },1200);
+
       setTimeout(() => setSubmitStatus(""), 3000);
     } catch (error) {
+      console.error("❌ Gagal daftar:", error.response?.data || error.message);
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(""), 3000);
     } finally {
@@ -87,6 +105,27 @@ export default function Register() {
                         required
                       />
                     </div>
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="jenis_kelamin"
+                        className="block text-black font-medium text-sm lg:text-base"
+                      >
+                        Jenis Kelamin
+                      </label>
+                      <select
+                        id="jenis_kelamin"
+                        name="jenis_kelamin"
+                        value={formData.jenis_kelamin}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-4 bg-white/90 backdrop-blur-sm rounded-xl border-0 text-gray-900 focus:ring-4 focus:ring-teal-400/50 focus:outline-none transition-all duration-300 text-sm lg:text-base"
+                        required
+                      >
+                        <option value="">Choose your gender</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                      </select>
+                    </div>
+
                     {/* Email */}
                     <div className="space-y-2">
                       <label
