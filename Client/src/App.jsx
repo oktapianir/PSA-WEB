@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Tentangkami from "./pages/Tentangkami";
@@ -10,31 +9,100 @@ import DetailProgram from "./pages/Detail-program";
 import Mitra from "./pages/Mitra";
 import DashboardUser from "./pages/DashboardUser";
 import DashboardAdmin from "./pages/Admin/DashboardAdmin";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import "./App.css";
+
+import UserLayout from "./layouts/UserLayout";
+import AdminLayout from "./layouts/AdminLayout";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tentangkami" element={<Tentangkami />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/program" element={<Program />} />
-          <Route path="/detail-program" element={<DetailProgram />} />
-          <Route path="/mitra" element={<Mitra />} />
-          <Route path="/dashboard-user" element={<DashboardUser />} />
-          <Route path="/dashboard-admin" element={<DashboardAdmin />} />
-        </Routes>
-        <Footer/>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+
+        <Route
+          path="/"
+          element={
+            <UserLayout>
+              <Home />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/tentangkami"
+          element={
+            <UserLayout>
+              <Tentangkami />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <UserLayout>
+              <Contact />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <UserLayout>
+              <Login />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <UserLayout>
+              <Register />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/program"
+          element={
+            <UserLayout>
+              <Program />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/detail-program"
+          element={
+            <UserLayout>
+              <DetailProgram />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/mitra"
+          element={
+            <UserLayout>
+              <Mitra />
+            </UserLayout>
+          }
+        />
+        <Route
+          path="/dashboard-user"
+          element={
+            <UserLayout>
+              <DashboardUser />
+            </UserLayout>
+          }
+        />
+
+        <Route
+          path="/dashboard-admin"
+          element={
+            <AdminLayout>
+              <DashboardAdmin />
+            </AdminLayout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
