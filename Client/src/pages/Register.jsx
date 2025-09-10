@@ -56,7 +56,7 @@ export default function Register() {
   };
 
   return (
-    <div className="w-full relative overflow-hidden mt-16 pt-12 pb-24">
+    <div className="max-w-7xl mx-auto px-6 overflow-hidden mt-16 pt-12 pb-24">
       {/* Background animasi */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-green-600/30 to-blue-600/30 rounded-full filter blur-3xl animate-pulse"></div>
