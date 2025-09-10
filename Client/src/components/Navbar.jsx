@@ -179,12 +179,12 @@ export default function Navbar() {
           >
             Tentang Kami
           </a>
-          {/* <a
-            href="#mitra"
+          <a
+            href="/mitra"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             Mitra
-          </a> */}
+          </a>
           <a
             href="/contact"
             className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
