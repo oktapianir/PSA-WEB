@@ -42,8 +42,11 @@ export default function Login() {
       setSubmitStatus("success");
       setFormData({ email: "", password: "" });
 
-      // Redirect ke halaman utama 
-      window.location.href = "/dashboard-user";
+      if (data.user.role === "admin") {
+        window.location.href = "/dashboard-admin";
+      } else {
+        window.location.href = "/dashboard-user";
+      }
     } catch (error) {
       setSubmitStatus("error");
     } finally {
