@@ -9,6 +9,7 @@ import Program from "./pages/Program";
 import DetailProgram from "./pages/Detail-program";
 import Mitra from "./pages/Mitra";
 import DashboardUser from "./pages/DashboardUser";
+import DashboardAdmin from "./pages/Admin/DashboardAdmin";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./App.css";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/detail-program" element={<DetailProgram />} />
           <Route path="/mitra" element={<Mitra />} />
           <Route path="/dashboard-user" element={<DashboardUser />} />
+          <Route path="/dashboard-admin" element={<DashboardAdmin />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
