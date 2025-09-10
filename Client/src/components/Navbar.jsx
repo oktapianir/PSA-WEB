@@ -36,52 +36,6 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          {/* <li className="relative group">
-            <Link
-              to="/program"
-              className="hover:text-blue-600 transition-colors duration-200 flex items-center group"
-            >
-              Program
-              <svg
-                className="w-4 h-4 ml-1 transform transition-transform group-hover:rotate-180"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <ul className="absolute left-0 mt-3 w-56 bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-              <li>
-                <a
-                  href="#pelatihan"
-                  className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-600 rounded-t-xl transition-colors"
-                >
-                  Pelatihan Teknis
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sertifikasi"
-                  className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                >
-                  Sertifikasi BNSP
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#magang"
-                  className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-600 rounded-b-xl transition-colors"
-                >
-                  Program Magang
-                </a>
-              </li>
-            </ul>
-          </li> */}
           <li>
             <Link
               to="/tentangkami"
@@ -91,7 +45,7 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
               to="/mitra"
               className="hover:text-blue-600 transition-colors duration-200 relative group"
@@ -99,7 +53,7 @@ export default function Navbar() {
               Mitra
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               to="/contact"
