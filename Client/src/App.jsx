@@ -9,6 +9,7 @@ import DetailProgram from "./pages/Detail-program";
 import Mitra from "./pages/Mitra";
 import DashboardUser from "./pages/DashboardUser";
 import DashboardAdmin from "./pages/Admin/DashboardAdmin";
+import ProgramAdmin from "./pages/Admin/ProgramAdmin";
 
 import UserLayout from "./layouts/UserLayout";
 import AdminLayout from "./layouts/AdminLayout";
@@ -17,7 +18,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route
           path="/"
           element={
@@ -99,10 +99,18 @@ function App() {
             </AdminLayout>
           }
         />
+
+        <Route
+          path="/program-admin"
+          element={
+            <AdminLayout>
+              <ProgramAdmin />
+            </AdminLayout>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
