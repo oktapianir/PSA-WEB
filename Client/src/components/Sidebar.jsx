@@ -12,12 +12,12 @@ export default function Sidebar() {
 
   return (
     <div className="w-64 h-screen bg-gray-800 text-white flex flex-col p-4">
-      <h2 className="text-xl font-bold mb-6 text-center">Admin Panel</h2>
+      <h2 className="text-xl font-bold mb-6 text-center">Admin Punya Skill Akademi</h2>
       <nav className="flex flex-col space-y-4">
         <Link to="/dashboard-admin" className="hover:text-blue-300">
           Dashboard
         </Link>
-        <Link to="#" className="hover:text-blue-300">
+        <Link to="/program-admin" className="hover:text-blue-300">
           Program
         </Link>
         <Link to="#" className="hover:text-blue-300">
